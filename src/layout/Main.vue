@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <navigation></navigation>
-    <blog-title></blog-title>
+    <blog-title>
+      <slot name="main"></slot>
+      <slot name="sub"></slot>
+    </blog-title>
     <index-post-list></index-post-list>
     <foot></foot>
   </div>
 </template>
- 
-<script>
-/* 加载布局 */
-import MainLayout from "./layout/Main.vue";
 
+<script>
 /* 基础组件 */
 import Navigation from "./components/Navigation.vue";
 import BlogTitle from "./components/BlogTitle.vue";
@@ -22,8 +22,6 @@ import IndexPostList from "./components/IndexPostList.vue";
 export default {
   name: "app",
   components: {
-    /* 基础布局 */
-    main: MainLayout,
     /* 基础组件 */
     navigation: Navigation,
     blogTitle: BlogTitle,
@@ -32,9 +30,7 @@ export default {
     indexPostList: IndexPostList
   },
   data() {
-    return {
-      title: "Home Title"
-    };
+    return {};
   }
 };
 </script>
@@ -43,7 +39,7 @@ export default {
 body {
   margin: 0;
   font-family: Gotham, "Microsoft YaHei", "Open Sans", "Helvetica Neue",
-    Helvetica, Arial, "Microsoft YaHei", sans-serif;
+    Helvetica, Arial, sans-serif;
   background-color: #f7f7f7;
 }
 </style>
