@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <navigation></navigation>
-    <blog-title></blog-title>
-    <index-post-list></index-post-list>
-    <foot></foot>
+    <main-layout></main-layout>
   </div>
 </template>
  
@@ -23,7 +20,7 @@ export default {
   name: "app",
   components: {
     /* 基础布局 */
-    main: MainLayout,
+    mainLayout: MainLayout,
     /* 基础组件 */
     navigation: Navigation,
     blogTitle: BlogTitle,
@@ -33,7 +30,6 @@ export default {
   },
   data() {
     return {
-      title: "Home Title"
     };
   }
 };

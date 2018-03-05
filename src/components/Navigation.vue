@@ -9,7 +9,7 @@
       <div class="list">
         <ul class="nav-list">
           <li class="nav-list-item">
-            <a href="./index.html">首页</a>
+            <a href="#/App">首页</a>
           </li>
           <li class="nav-list-item">
             <a href="./about.html">关于我</a>
@@ -20,7 +20,6 @@
         </ul>
       </div>
     </div>
-
   </div>
 </template>
 
