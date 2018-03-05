@@ -36,10 +36,5 @@ export default {
 </script>
 
 <style>
-body {
-  margin: 0;
-  font-family: Gotham, "Microsoft YaHei", "Open Sans", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
-  background-color: #f7f7f7;
-}
+@import url("../css/style.css");
 </style>
