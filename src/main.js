@@ -6,10 +6,10 @@ import VueResource from 'vue-resource'
 
 import router from './router'
 
-Vue.config.debug = true;
+Vue.config.debug = true
 
-Vue.use(VueRouter);
-Vue.use(VueResource);
+Vue.use(VueRouter)
+Vue.use(VueResource)
 
 const app = new Vue({
   el: '#app',

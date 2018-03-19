@@ -3,7 +3,7 @@
     <main-layout></main-layout>
   </div>
 </template>
- 
+
 <script>
 /* 加载布局 */
 import MainLayout from "./layout/Main.vue";
